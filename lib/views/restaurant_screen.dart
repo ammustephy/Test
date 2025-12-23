@@ -10,7 +10,8 @@ class RestaurantScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final controller = Get.find<RestaurantController>();
+    final controller =
+        Get.find<RestaurantController>(); //to access the list of products
 
     return Scaffold(
       backgroundColor: const Color(0xFFF8F8F8),
@@ -294,6 +295,7 @@ class RestaurantScreen extends StatelessWidget {
                                   child: GestureDetector(
                                     onTap: () {
                                       Get.bottomSheet(
+                                        //open the item customization modal when a product icon is clicked.
                                         ItemBottomSheet(product: product),
                                         isScrollControlled: true,
                                         backgroundColor: Colors.transparent,

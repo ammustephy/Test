@@ -2,6 +2,7 @@ import 'package:get/get.dart';
 import '../models/product.dart';
 
 class RestaurantController extends GetxController {
+  //This ensures that when a value changes in the controller
   final products = <Product>[
     Product(
       id: "1",

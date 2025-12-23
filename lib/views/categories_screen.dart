@@ -9,7 +9,8 @@ class CategoriesScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final controller = Get.find<RestaurantController>();
+    final controller =
+        Get.find<RestaurantController>(); //pull the list of food categories
 
     return Scaffold(
       backgroundColor: kBgColor,

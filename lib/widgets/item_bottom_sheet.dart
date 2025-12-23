@@ -82,6 +82,7 @@ class ItemBottomSheet extends StatelessWidget {
                           border: Border.all(color: Colors.grey.shade200),
                         ),
                         child: Obx(
+                          //widgets to listen for changes in quantity or selected beverages.
                           () => Column(
                             children: [
                               _buildCustomRadioOption(
@@ -209,7 +210,8 @@ class ItemBottomSheet extends StatelessWidget {
                   Expanded(
                     child: Obx(
                       () => ElevatedButton(
-                        onPressed: () => Get.back(),
+                        onPressed: () =>
+                            Get.back(), //close the bottom sheet once the user clicks "Add Item".
                         style: ElevatedButton.styleFrom(
                           backgroundColor: const Color(0xFFFF5722),
                           minimumSize: const Size(double.infinity, 48),

@@ -5,7 +5,9 @@ import 'views/restaurant_screen.dart';
 import 'views/categories_screen.dart';
 
 void main() {
-  Get.put(RestaurantController());
+  Get.put(
+    RestaurantController(),
+  ); //initialize the controller globally so it's ready for all other pages.
   runApp(const MyApp());
 }
 
@@ -15,6 +17,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      // to enable context less naviation
       title: 'Restaurant App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
